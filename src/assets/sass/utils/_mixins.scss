@@ -11,8 +11,8 @@
   @content;
 }
 
-@mixin box-shadow {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+@mixin box-shadow($opacity: 0.15) {
+  box-shadow: rgba(0, 0, 0, $opacity) 0px 4px 12px;
 }
 
 @mixin box-opacity($opacity: 0.25) {
@@ -30,7 +30,7 @@
 
 @mixin margin-height-section {
   & > section {
-    margin: 50px 0;
+    margin: 50px auto;
 
     &:nth-child(1) {
       margin-top: 0;

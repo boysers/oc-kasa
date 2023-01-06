@@ -1,5 +1,5 @@
-import Card from '../components/Card';
 import { getLogementsForHomePage } from '../services';
+import { Card } from '../components';
 import backgroundImg from '../assets/images/background/eric-muhr-P_XxsdVgtpQ-unsplash.jpg';
 
 function Home() {

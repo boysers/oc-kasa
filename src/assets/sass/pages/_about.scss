@@ -1,3 +1,12 @@
 .About {
   @include margin-height-section;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
