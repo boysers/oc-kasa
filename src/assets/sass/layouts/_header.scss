@@ -1,0 +1,28 @@
+.Header {
+  height: 100px;
+
+  @include content-center {
+    justify-content: space-between;
+  }
+
+  &__logo {
+    height: 68px;
+  }
+
+  &-navbar {
+    display: flex;
+
+    &__link {
+      font: {
+        weight: 500;
+        size: 24px;
+      }
+
+      margin: 0 2rem;
+
+      &--active {
+        text-decoration: underline;
+      }
+    }
+  }
+}

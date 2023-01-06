@@ -1,0 +1,21 @@
+.Footer {
+  background-color: #000000;
+  color: #ffffff;
+
+  @include content-center {
+    flex-direction: column;
+  }
+
+  &__logo {
+    height: 40px;
+  }
+
+  &__copyright {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  & > * {
+    margin: 1rem 0;
+  }
+}

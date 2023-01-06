@@ -3,12 +3,10 @@
 La démo du site --> [site-kasa-boysers.netlify.app](https://site-kasa-boysers.netlify.app/)
 
 ## Todo
+
 - [x] Étape 1
 - [x] Étape 2
-- [ ] Étape 3
-  - ~~Logique routing~~
-  - ~~create component layout --> header and footer~~
-  - style css header & footer
+- [x] Étape 3
 - [ ] Étape 4
 - [ ] Étape 5
 - [ ] Étape 6
@@ -18,8 +16,16 @@ La démo du site --> [site-kasa-boysers.netlify.app](https://site-kasa-boysers.n
 
 ## Ressouces
 
+### Fonts
+
+Montserrat
+
+### Maquettes
+
 Découpage Layout Component (header, outlet, footer)
 ![découpage layout](./ressources/decoupage_layout.png)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
