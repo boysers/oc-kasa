@@ -7,9 +7,9 @@ La démo du site --> [site-kasa-boysers.netlify.app](https://site-kasa-boysers.n
 - [x] Étape 1
 - [x] Étape 2
 - [x] Étape 3
-- [ ] Étape 4
-- [ ] Étape 5
-- [ ] Étape 6
+- [x] Étape 4
+- [x] Étape 5
+- [x] Étape 6
 - [ ] Étape 7
 - [ ] Étape 8
 - [ ] Étape 9
