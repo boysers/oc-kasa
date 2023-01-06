@@ -1,5 +1,24 @@
 # Getting Started with Create React App
 
+## Todo
+- [x] Étape 1
+- [x] Étape 2
+- [ ] Étape 3
+  - ~~Logique routing~~
+  - ~~create component layout --> header and footer~~
+  - style css header & footer
+- [ ] Étape 4
+- [ ] Étape 5
+- [ ] Étape 6
+- [ ] Étape 7
+- [ ] Étape 8
+- [ ] Étape 9
+
+## Ressouces
+
+Découpage Layout Component (header, outlet, footer)
+![découpage layout](./ressources/decoupage_layout.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
