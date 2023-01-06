@@ -1,0 +1,24 @@
+.fullwidth-image {
+  border-radius: 25px;
+  overflow: hidden;
+
+  @include box-shadow;
+
+  position: relative;
+
+  &__picture {
+    display: block;
+  }
+
+  &__container {
+    @include box-opacity;
+  }
+
+  &__slogan {
+    color: #ffffff;
+
+    font: {
+      size: 48px;
+    }
+  }
+}
