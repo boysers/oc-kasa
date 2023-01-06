@@ -1,0 +1,12 @@
+.Link {
+  font: {
+    weight: 500;
+    size: 24px;
+  }
+
+  margin: 0 2rem;
+
+  &--active {
+    text-decoration: underline;
+  }
+}
