@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Site Kasa with react
+
+La démo du site --> [site-kasa-boysers.netlify.app](https://site-kasa-boysers.netlify.app/)
 
 ## Todo
 - [x] Étape 1
