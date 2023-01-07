@@ -2,7 +2,7 @@
 
 La démo du site --> [site-kasa-boysers.netlify.app](https://site-kasa-boysers.netlify.app/)
 
-## Todo
+## Todos
 
 - [x] Étape 1
 - [x] Étape 2
@@ -12,16 +12,14 @@ La démo du site --> [site-kasa-boysers.netlify.app](https://site-kasa-boysers.n
 - [x] Étape 6
 - [x] Étape 7
 - [x] Étape 8
-- [ ] Étape 9
-- [ ] Étape 10
+- [x] Étape 9
+- [x] Étape 10
 
 ## Ressouces
 
 ### Fonts
 
 Montserrat
-
-<!-- ### Maquettes -->
 
 ## Getting Started with Create React App
 
