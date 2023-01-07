@@ -37,3 +37,24 @@
     }
   }
 }
+
+@mixin transition-arrow($className, $size, $direction: right) {
+  @if ($direction == left) {
+    $size: calc($size * -1);
+  }
+
+  & > #{$className} {
+    transition: transform 150ms;
+    cursor: pointer;
+  }
+
+  & > #{$className}:hover {
+    transform: translateX(calc($size * 0.20));
+  }
+
+  & > #{$className}:active {
+    transition: transform 75ms;
+
+    transform: translateX($size * 0.50);
+  }
+}

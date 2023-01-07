@@ -8,16 +8,16 @@ function Collapse({ title, children }) {
     setIsToggle((prev) => !prev);
   };
 
-  const rotateArrow = isToggle ? 'Collapse-header__arrow--rotate' : '';
-  const classNameArrow = `Collapse-header__arrow ${rotateArrow}`;
+  const rotateArrow = isToggle ? ' Collapse-header__arrow--rotate' : '';
+  const classNameArrow = `Collapse-header__arrow${rotateArrow}`;
 
-  const translateMain = isToggle ? 'Collapse__main--active' : '';
-  const classNameMain = `Collapse__main ${translateMain}`;
+  const translateMain = isToggle ? ' Collapse__main--active' : '';
+  const classNameMain = `Collapse__main${translateMain}`;
 
   return (
     <article className="Collapse">
       <div className="Collapse-header" onClick={handleChange}>
-        <h2 className="Collapse-header__title">{title}</h2>
+        <h3 className="Collapse-header__title">{title}</h3>
         <img className={classNameArrow} src={iconArrow} alt="arrow icon" />
       </div>
 

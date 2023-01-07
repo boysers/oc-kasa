@@ -10,9 +10,10 @@ La démo du site --> [site-kasa-boysers.netlify.app](https://site-kasa-boysers.n
 - [x] Étape 4
 - [x] Étape 5
 - [x] Étape 6
-- [ ] Étape 7
-- [ ] Étape 8
+- [x] Étape 7
+- [x] Étape 8
 - [ ] Étape 9
+- [ ] Étape 10
 
 ## Ressouces
 

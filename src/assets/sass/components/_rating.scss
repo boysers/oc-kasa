@@ -1,0 +1,8 @@
+.Rating {
+  height: 30px;
+  display: flex;
+
+  & > img {
+    width: auto;
+  }
+}
