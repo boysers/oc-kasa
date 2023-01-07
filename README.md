@@ -4,16 +4,16 @@ La démo du site --> [site-kasa-boysers.netlify.app](https://site-kasa-boysers.n
 
 ## Todos
 
-- [x] Étape 1
-- [x] Étape 2
-- [x] Étape 3
-- [x] Étape 4
-- [x] Étape 5
-- [x] Étape 6
-- [x] Étape 7
-- [x] Étape 8
-- [x] Étape 9
-- [x] Étape 10
+- [x] Étape 1 : Initialisez le projet
+- [x] Étape 2 : Ajoutez React Router
+- [x] Étape 3 : Créez le routeur et les différentes pages de l’application 
+- [x] Étape 4 : Créez la page d’accueil
+- [x] Étape 5 : Créez la page À propos
+- [x] Étape 6 : Mettez en page la page d’erreur
+- [x] Étape 7 : Créez le carrousel de la page de logement
+- [x] Étape 8 : Finalisez la page de logement
+- [x] Étape 9 : Gérez l’erreur sur l’id d’une propriété
+- [x] Étape 10 : Vérifiez l’ensemble de votre site
 
 ## Ressouces
 
