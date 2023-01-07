@@ -62,7 +62,7 @@
   & > #{$className}:active {
     transition: transform 150ms;
 
-    transform: translateX($size * 0.5);
+    transform: translateX($size * 0.4);
   }
 }
 
