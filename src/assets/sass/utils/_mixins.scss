@@ -51,7 +51,7 @@
   }
 
   & > #{$className} {
-    transition: transform 150ms;
+    transition: transform 300ms;
     cursor: pointer;
   }
 
@@ -60,7 +60,7 @@
   }
 
   & > #{$className}:active {
-    transition: transform 75ms;
+    transition: transform 150ms;
 
     transform: translateX($size * 0.5);
   }

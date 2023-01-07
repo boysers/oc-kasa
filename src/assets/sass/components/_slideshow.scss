@@ -7,6 +7,15 @@
 
   @include box-shadow;
 
+  @include media-tablet {
+    height: calc(415px * 0.75);
+  }
+
+  @include media-mobile {
+    height: 255px;
+    border-radius: 10px;
+  }
+
   & > img {
     height: 100%;
   }
@@ -25,7 +34,14 @@
     align-items: center;
     height: 100%;
 
-    transition: transform 1s;
+    @include media-tablet {
+      width: calc(50px * 0.75);
+    }
+
+    @include media-tablet {
+      width: 14px;
+      $size: calc($size * 0.5);
+    }
 
     &__left {
       left: $size;

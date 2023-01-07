@@ -8,6 +8,11 @@
 
   @include box-shadow;
 
+  @include media-mobile {
+    aspect-ratio: 0;
+    height: 255px;
+  }
+
   &:hover {
     cursor: pointer;
   }

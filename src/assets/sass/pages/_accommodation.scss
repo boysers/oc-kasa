@@ -3,12 +3,22 @@
 
   margin-bottom: calc($margin-vertical * 2);
 
+  @include media-mobile {
+    margin-bottom: $margin-vertical;
+  }
+
   &__header {
     &__info {
       display: flex;
       justify-content: space-between;
 
       margin: $margin-vertical 0;
+
+      @include media-mobile {
+        margin: 16px 0;
+        flex-direction: column;
+        gap: 16px;
+      }
     }
 
     &__appartement {
@@ -20,27 +30,51 @@
     &__title {
       font-size: 36px;
       margin-bottom: 5px;
+
+      @include media-tablet {
+        font-size: calc(36px * 0.75);
+      }
+
+      @include media-mobile {
+        font-size: 18px;
+      }
     }
 
     &__location {
       font-weight: 500;
       font-style: normal;
+      padding-bottom: 10px;
+
+      @include media-mobile {
+        font-size: 14px;
+      }
     }
 
     &__tags {
       display: flex;
-      gap: 1rem;
+      gap: 10px;
+      flex-wrap: wrap;
 
       &__item {
         padding: 5px 16px;
-        text-align: center;
         min-width: 115px;
         border-radius: 10px;
+        text-align: center;
         color: #ffffff;
         background-color: #ff6060;
 
         font-size: 14px;
         font-weight: 500;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media-mobile {
+          font-size: 10px;
+          min-width: 84px;
+          border-radius: 5px;
+        }
       }
     }
 
@@ -52,9 +86,16 @@
 
       gap: $margin-vertical;
 
+      @include media-mobile {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+        align-items: center;
+      }
+
       &__details {
         display: flex;
-        align-items: center;
+        justify-content: center;
       }
 
       &__name {
@@ -63,6 +104,11 @@
         align-items: flex-end;
         line-height: 26px;
         margin-right: 10px;
+
+        @include media-mobile {
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
 
       &__picture {
@@ -70,6 +116,12 @@
         border-radius: 50%;
         width: $size;
         height: $size;
+
+        @include media-mobile {
+          $size: calc($size * 0.5);
+          width: $size;
+          height: $size;
+        }
       }
     }
   }
@@ -79,16 +131,44 @@
     gap: 5rem;
     align-items: baseline;
 
+    @include media-tablet {
+      gap: calc(5rem * 0.5);
+    }
+
+    @include media-mobile {
+      flex-direction: column;
+      gap: 20px;
+    }
+
     .Collapse {
       flex: 1;
 
-      &-header__title {
-        font-size: 18px;
+      @include media-mobile {
+        width: 100%;
+      }
+
+      &-header {
+        @include media-mobile {
+          height: 30px;
+        }
+
+        &__title {
+          font-size: 18px;
+
+          @include media-mobile {
+            font-size: 13px;
+          }
+        }
       }
 
       &__main {
         font-size: 18px;
-        line-height: 25.67px;
+        line-height: 26px;
+
+        @include media-mobile {
+          font-size: 12px;
+          line-height: 16px;
+        }
       }
     }
   }
