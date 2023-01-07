@@ -9,6 +9,14 @@ function Slideshow({ pictures }: SlideshowProps) {
 
   const slide = pictures[slideId - 1];
 
+  if (pictures.length <= 1) {
+    return (
+      <div className="Slideshow">
+        <img src={slide} alt={`accommodation ${slideId}`} />
+      </div>
+    );
+  }
+
   const handleClickPrevious = () => {
     setSlideId((prev) => (prev <= 1 ? pictures.length : --prev));
   };

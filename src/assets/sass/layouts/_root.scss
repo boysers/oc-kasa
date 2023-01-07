@@ -1,0 +1,29 @@
+#root {
+  min-height: 100vh;
+  padding-bottom: $footer-height;
+
+  position: relative;
+
+  > header,
+  > main {
+    @include max-content;
+  }
+
+  > .Header {
+    height: $header-height;
+  }
+
+  > main {
+    & > .ErrorBoundary {
+      height: calc(100vh - ($footer-height + $header-height));
+    }
+  }
+
+  > .Footer {
+    width: 100%;
+    height: $footer-height;
+
+    position: absolute;
+    bottom: 0;
+  }
+}

@@ -1,6 +1,4 @@
 .Header {
-  height: 120px;
-
   @include content-center {
     justify-content: space-between;
   }

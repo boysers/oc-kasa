@@ -5,6 +5,8 @@
 
   position: relative;
 
+  @include box-shadow;
+
   & > img {
     height: 100%;
   }

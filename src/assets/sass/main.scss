@@ -5,9 +5,11 @@
 @import 'base/reset';
 @import 'base/typography';
 
+@import 'layouts/root';
 @import 'layouts/header';
 @import 'layouts/footer';
 @import 'layouts/boxHeaderImage';
+@import 'layouts/errorBoundary';
 
 @import 'components/link';
 @import 'components/card';
@@ -17,5 +19,4 @@
 
 @import 'pages/home';
 @import 'pages/about';
-@import 'pages/notfound';
 @import 'pages/logement';
