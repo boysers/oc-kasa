@@ -57,10 +57,12 @@
     &__right {
       right: $size;
 
-      @include transition-arrow(img, calc($size * 0.5), right);
+      @include transition-arrow(img, $size, right);
 
       @include media-tablet {
         right: calc($size * 0.5);
+
+        @include transition-arrow(img, calc($size * 0.5), right);
       }
     }
   }
