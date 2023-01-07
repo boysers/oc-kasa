@@ -3,10 +3,10 @@ import listAccommodation from '../assets/json/accommodations.json';
 import {
   ILoaderDataAccommodation,
   ILoaderDataHomeAccomodations,
+  IJsonThrowError,
 } from '../types';
-import IJsonThrowError from '../types/IJsonError';
 
-export function jsonThrowError(data: IJsonThrowError) {
+function jsonThrowError(data: IJsonThrowError) {
   return json<IJsonThrowError>(data);
 }
 

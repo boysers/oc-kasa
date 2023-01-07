@@ -6,11 +6,13 @@ function Footer() {
 
   return (
     <footer className="Footer">
-      <Link to="/" className='Footer__logo'>
+      <Link to="/" className="Footer__logo">
         <img src={logoKasaDark} alt="logo kasa" />
       </Link>
 
-      <p className='Footer__copyright'>© {currentYear} Kasa. All rights reserved</p>
+      <p className="Footer__copyright">
+        © {currentYear} Kasa. All rights reserved
+      </p>
     </footer>
   );
 }

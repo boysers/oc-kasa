@@ -7,4 +7,4 @@ export type {
 
 export type { default as IRouteError } from './IRouteError';
 
-export type { default as IJsonError } from './IJsonError';
+export type { default as IJsonThrowError } from './IJsonThrowError';

@@ -13,7 +13,7 @@ function About() {
         <div className="fullwidth-image__container"></div>
       </section>
 
-      <section className='About__container'>
+      <section className="About__container">
         <Collapse title="Fiabilité">
           <p>
             Les annonces postées sur Kasa garantissent une fiabilité totale. Les
