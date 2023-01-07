@@ -1,10 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 
-function Card({ id, title, cover }) {
+type CardProps = { id: string; title: string; cover: string };
+
+function Card({ id, title, cover }: CardProps) {
   const navigate = useNavigate();
 
   const handleClickNavigate = () => {
-    navigate(`/logements/${id}`);
+    navigate(`/accommodations/${id}`);
   };
 
   return (

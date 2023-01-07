@@ -1,8 +1,10 @@
 import starRed from '../assets/images/icon/star-red.svg';
 import starGrey from '../assets/images/icon/star-grey.svg';
 
-function Rating({ value }) {
-  const stars = [...Array(Number(value))].map((star, index) => {
+type RatingProps = { value: number };
+
+function Rating({ value }: RatingProps) {
+  const stars = [...Array(value)].map((star, index) => {
     index++;
     const key = `star ${index}`;
     return <img src={starRed} alt={key} key={key} />;

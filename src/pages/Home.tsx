@@ -1,9 +1,10 @@
-import { getLogementsForHomePage } from '../services';
 import { Card } from '../components';
 import backgroundImg from '../assets/images/background/eric-muhr-P_XxsdVgtpQ-unsplash.jpg';
+import { useLoaderData } from '../hooks';
+import { ILoaderDataHomeAccomodations } from '../types';
 
 function Home() {
-  const logements = getLogementsForHomePage();
+  const { accommodations } = useLoaderData<ILoaderDataHomeAccomodations>();
 
   return (
     <div className="Home">
@@ -21,8 +22,8 @@ function Home() {
       </section>
 
       <section className="Home-logements">
-        {logements.map((logement) => (
-          <Card {...logement} key={logement.id} />
+        {accommodations.map((accommodation) => (
+          <Card {...accommodation} key={accommodation.id} />
         ))}
       </section>
     </div>

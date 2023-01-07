@@ -1,11 +1,17 @@
 import { Link, NavLink } from 'react-router-dom';
 import logoKasa from '../assets/images/logo/logo_kasa.svg';
 
+type FuncClassName = (props: {
+  isActive: boolean;
+  isPending: boolean;
+}) => string | undefined;
+
 function Header() {
   const className = 'Header-navbar__link';
   const activeClassName = `${className} Link--active`;
 
-  const isActive = ({ isActive }) => (isActive ? activeClassName : className);
+  const isActive: FuncClassName = ({ isActive }) =>
+    isActive ? activeClassName : className;
 
   return (
     <header className="Header">

@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import iconArrow from '../assets/images/icon/arrow_back_ios-24px.svg';
 
-function Collapse({ title, children }) {
+type CollapseProps = React.PropsWithChildren<{ title: string }>;
+
+function Collapse({ title, children }: CollapseProps) {
   const [isToggle, setIsToggle] = useState(false);
 
   const handleChange = () => {

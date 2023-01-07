@@ -2,7 +2,9 @@ import { useState } from 'react';
 import arrowLeft from '../assets/images/icon/arrow_left.svg';
 import arrowRigth from '../assets/images/icon/arrow_right.svg';
 
-function Slideshow({ pictures }) {
+type SlideshowProps = { pictures: string[] };
+
+function Slideshow({ pictures }: SlideshowProps) {
   const [slideId, setSlideId] = useState(1);
 
   const slide = pictures[slideId - 1];

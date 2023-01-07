@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
+import { useRouteError } from '../hooks';
 
 function NotFound() {
+  const error = useRouteError();
+
+  console.log(error);
+
   return (
     <div className="NotFound">
       <div>

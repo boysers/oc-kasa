@@ -1,16 +1,9 @@
-import { useNavigate, useParams } from 'react-router-dom';
 import { Collapse, Rating, Slideshow } from '../components';
-import { getLogement } from '../services';
-import { useEffect } from 'react';
+import { IAccommodation, ILoaderDataAccommodation } from '../types';
+import { useLoaderData } from '../hooks';
 
-function Logement() {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const logement = getLogement(id);
-
-  useEffect(() => {
-    if (!logement) return navigate('/404');
-  }, [logement, navigate]);
+function Accommodation() {
+  const { accommodation } = useLoaderData<ILoaderDataAccommodation>();
 
   const {
     title,
@@ -21,7 +14,7 @@ function Logement() {
     description,
     equipments,
     pictures,
-  } = logement;
+  } = accommodation as IAccommodation;
 
   const [firstName, name] = host.name.split(' ');
 
@@ -55,7 +48,7 @@ function Logement() {
 
           <div className="Logement__header__host">
             <div className="Logement__header__host__rating">
-              <Rating value={rating} />
+              <Rating value={Number(rating)} />
             </div>
 
             <div className="Logement__header__host__details">
@@ -74,13 +67,13 @@ function Logement() {
       </section>
 
       <section className="Logement__details">
-        <Collapse title="Description" className="Logement__details__collapse">
+        <Collapse title="Description">
           <div>
             <p>{description}</p>
           </div>
         </Collapse>
 
-        <Collapse title="Équipements" className="Logement__details__collapse">
+        <Collapse title="Équipements">
           <div>
             {equipments.map((equipment, index) => (
               <p key={`${index}-${equipment}`}>{equipment}</p>
@@ -92,4 +85,4 @@ function Logement() {
   );
 }
 
-export default Logement;
+export default Accommodation;

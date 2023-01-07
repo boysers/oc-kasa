@@ -21,10 +21,7 @@ La démo du site --> [site-kasa-boysers.netlify.app](https://site-kasa-boysers.n
 
 Montserrat
 
-### Maquettes
-
-Découpage Layout Component (header, outlet, footer)
-![découpage layout](./ressources/decoupage_layout.png)
+<!-- ### Maquettes -->
 
 ## Getting Started with Create React App
 
