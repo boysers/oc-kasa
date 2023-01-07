@@ -1,21 +1,46 @@
 #root {
+  $ratio: 0.7;
+
   min-height: 100vh;
   padding-bottom: $footer-height;
 
   position: relative;
 
+  @include media-mobile {
+    $header-height: 80px;
+  }
+
   > header,
   > main {
+    padding: 0 50px;
+
     @include max-content;
+
+    @include media-mobile {
+      padding: 0 20px;
+    }
   }
 
   > .Header {
     height: $header-height;
+
+    @include media-mobile {
+      height: calc($header-height * $ratio);
+    }
   }
 
   > main {
     & > .ErrorBoundary {
       height: calc(100vh - ($footer-height + $header-height));
+
+      @include media-mobile {
+        $header-mobile-height: calc($header-height * $ratio);
+        height: calc(100vh - ($footer-height + $header-mobile-height));
+      }
+    }
+
+    @include media-mobile {
+      padding: 0 20px;
     }
   }
 

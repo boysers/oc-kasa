@@ -1,6 +1,10 @@
 .About {
   @include margin-height-section;
 
+  & > .fullwidth-image {
+    height: 224px;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -8,5 +12,14 @@
 
     max-width: 80%;
     margin: 0 auto;
+
+    @include media-tablet {
+      max-width: 90%;
+      gap: 20px;
+    }
+
+    @include media-mobile {
+      max-width: 100%;
+    }
   }
 }

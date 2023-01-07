@@ -3,8 +3,16 @@
     justify-content: space-between;
   }
 
+  @include media-mobile {
+  }
+
   &__logo {
     height: 68px;
+
+    @include media-mobile {
+      height: auto;
+      width: 140px;
+    }
   }
 
   &-navbar {
@@ -17,6 +25,11 @@
       }
 
       margin: 0 2rem;
+
+      @include media-mobile {
+        margin: 0 8px;
+        font-size: 12px;
+      }
     }
   }
 }

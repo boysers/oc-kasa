@@ -10,6 +10,16 @@
       weight: 700;
       size: 263px;
     }
+
+    margin-bottom: 0.5rem;
+
+    @include media-tablet {
+      font-size: calc(263px * 0.75);
+    }
+
+    @include media-mobile {
+      font-size: 96px;
+    }
   }
 
   &__message {
@@ -17,12 +27,24 @@
       weight: 500;
       size: 36px;
     }
+
+    @include media-tablet {
+      font-size: calc(36px * 0.75);
+    }
+
+    @include media-mobile {
+      font-size: 18px;
+    }
   }
 
   &__link {
     font: {
       weight: 500;
       size: 18px;
+    }
+
+    @include media-mobile {
+      font-size: 14px;
     }
   }
 }

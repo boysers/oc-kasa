@@ -19,25 +19,25 @@ function Accommodation() {
   const [firstName, name] = host.name.split(' ');
 
   return (
-    <article className="Logement">
-      <section className="Logement__header">
+    <article className="Accommodation">
+      <section className="Accommodation__header">
         <Slideshow pictures={pictures} />
 
-        <div className="Logement__header__info">
-          <div className="Logement__header__appartement">
+        <div className="Accommodation__header__info">
+          <div className="Accommodation__header__appartement">
             <div>
-              <h2 className="Logement__header__title">{title}</h2>
-              <address className="Logement__header__location">
+              <h2 className="Accommodation__header__title">{title}</h2>
+              <address className="Accommodation__header__location">
                 {location}
               </address>
             </div>
 
-            <div className="Logement__header__tags">
+            <div className="Accommodation__header__tags">
               {tags.map((tag, index) => {
                 return (
                   <div
                     key={`${index}-${tag}`}
-                    className="Logement__header__tags__item"
+                    className="Accommodation__header__tags__item"
                   >
                     {tag}
                   </div>
@@ -46,18 +46,18 @@ function Accommodation() {
             </div>
           </div>
 
-          <div className="Logement__header__host">
-            <div className="Logement__header__host__rating">
+          <div className="Accommodation__header__host">
+            <div className="Accommodation__header__host__rating">
               <Rating value={Number(rating)} />
             </div>
 
-            <div className="Logement__header__host__details">
-              <h3 className="Logement__header__host__name">
+            <div className="Accommodation__header__host__details">
+              <h3 className="Accommodation__header__host__name">
                 <span>{firstName}</span>
                 <span>{name}</span>
               </h3>
               <img
-                className="Logement__header__host__picture"
+                className="Accommodation__header__host__picture"
                 src={host.picture}
                 alt={host.name}
               />
@@ -66,7 +66,7 @@ function Accommodation() {
         </div>
       </section>
 
-      <section className="Logement__details">
+      <section className="Accommodation__details">
         <Collapse title="Description">
           <div>
             <p>{description}</p>

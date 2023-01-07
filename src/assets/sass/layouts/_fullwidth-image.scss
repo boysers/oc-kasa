@@ -1,0 +1,46 @@
+.fullwidth-image {
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+
+  @include box-shadow;
+
+  @include media-mobile {
+    height: 111px;
+    border-radius: 10px;
+  }
+
+  &__picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-position: bottom;
+    object-fit: cover;
+  }
+
+  &__container {
+    @include box-opacity;
+
+    @include media-mobile {
+      justify-content: flex-start;
+    }
+  }
+
+  &__slogan {
+    color: #ffffff;
+    margin-left: 16px;
+
+    font: {
+      size: 48px;
+    }
+
+    @include media-tablet {
+      font-size: calc(48px * 0.7);
+    }
+
+    @include media-mobile {
+      font-size: 24px;
+      width: 217px;
+    }
+  }
+}
