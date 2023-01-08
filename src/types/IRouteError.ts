@@ -1,10 +1,11 @@
-type Data = { status: number; sorry: string };
+export interface IJsonThrowError {
+  status: number;
+  sorry: string;
+}
 
-type IRouteError = {
-  data: Data;
+export type IRouteError = {
+  data: IJsonThrowError;
   internal: boolean;
   status: number;
   statusText: string;
 };
-
-export default IRouteError;

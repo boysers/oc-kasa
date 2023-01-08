@@ -1,4 +1,6 @@
 .Collapse {
+  overflow: hidden;
+
   @include box-shadow(0.1);
 
   &__main {

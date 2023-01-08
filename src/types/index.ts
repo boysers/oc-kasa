@@ -5,6 +5,4 @@ export type {
   ILoaderDataHomeAccomodations,
 } from './ILoaderData';
 
-export type { default as IRouteError } from './IRouteError';
-
-export type { default as IJsonThrowError } from './IJsonThrowError';
+export type { IRouteError, IJsonThrowError } from './IRouteError';
