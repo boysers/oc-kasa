@@ -11,14 +11,17 @@
 
     margin-top: -3px;
 
+    line-height: 34px;
+
     @include media-tablet {
       font-size: calc(24px * 0.75);
-      line-height: 16px;
+      line-height: calc(34px * 0.75);
       padding: 12px;
     }
 
     @include media-mobile {
       font-size: 12px;
+      line-height: 17px;
     }
   }
 

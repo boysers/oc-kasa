@@ -70,6 +70,10 @@
         align-items: center;
         justify-content: center;
 
+        @include media-tablet {
+          border-radius: calc(10px * 0.75);
+        }
+
         @include media-mobile {
           font-size: 10px;
           min-width: 84px;
@@ -132,7 +136,7 @@
     align-items: baseline;
 
     @include media-tablet {
-      gap: calc(5rem * 0.5);
+      gap: calc(5rem * 0.35);
     }
 
     @include media-mobile {
