@@ -1,6 +1,6 @@
 # Site Kasa with react
 
-La démo du site --> [site-kasa-boysers.netlify.app](https://site-kasa-boysers.netlify.app/)
+La démo du site --> [oc-kasa-react.netlify.app](https://oc-kasa-react.netlify.app/)
 
 ## Todos
 
