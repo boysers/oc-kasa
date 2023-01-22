@@ -16,16 +16,43 @@
     border-radius: 10px;
   }
 
+  &__dots,
+  & > img {
+    user-select: none;
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 24px;
+    transform: translate(-50%, 0);
+    color: #ffffff;
+
+    text-shadow: 0 0 5px #121212a4;
+
+    @include media-tablet {
+      margin-bottom: calc(24px * 0.75);
+    }
+
+    @include media-mobile {
+      display: none;
+    }
+  }
+
   & > img {
     height: 100%;
   }
 
   &__arrow {
-    $size: 20px;
+    $paddingSize: 20px;
+    $width: calc(60px + $paddingSize);
 
     position: absolute;
 
-    width: 50px;
+    width: $width;
+    padding: $paddingSize;
+
     height: auto;
     user-select: none;
     object-fit: contain;
@@ -35,34 +62,36 @@
     height: 100%;
 
     @include media-tablet {
-      width: calc(50px * 0.5);
+      width: calc($width * 0.8);
     }
 
     @include media-mobile {
-      width: 14px;
+      width: calc($width * 0.7);
     }
 
-    &__left {
-      left: $size;
+    $size: 20px;
 
-      @include transition-arrow(img, $size, left);
+    &__left {
+      left: 0;
+
+      filter: drop-shadow(5px 0px 2px #1212121e);
+
+      @include transition-arrow('img', $size, left);
 
       @include media-tablet {
-        left: calc($size * 0.5);
-
-        @include transition-arrow(img, calc($size * 0.5), left);
+        @include transition-arrow('img', calc($size * 0.5), left);
       }
     }
 
     &__right {
-      right: $size;
+      right: 0;
 
-      @include transition-arrow(img, $size, right);
+      filter: drop-shadow(-5px 0px 2px #1212121e);
+
+      @include transition-arrow('img', $size, right);
 
       @include media-tablet {
-        right: calc($size * 0.5);
-
-        @include transition-arrow(img, calc($size * 0.5), right);
+        @include transition-arrow('img', calc($size * 0.5), right);
       }
     }
   }

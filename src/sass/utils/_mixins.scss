@@ -50,19 +50,24 @@
     $size: calc($size * -1);
   }
 
-  & > #{$className} {
+  cursor: pointer;
+
+  #{$className} {
     transition: transform 300ms;
     cursor: pointer;
   }
 
-  & > #{$className}:hover {
-    transform: translateX(calc($size * 0.2));
+  &:hover {
+    #{$className} {
+      transform: translateX(calc($size * 0.2));
+    }
   }
 
-  & > #{$className}:active {
-    transition: transform 150ms;
-
-    transform: translateX($size * 0.4);
+  &:active {
+    #{$className} {
+      transition: transform 150ms;
+      transform: translateX($size * 0.4);
+    }
   }
 }
 

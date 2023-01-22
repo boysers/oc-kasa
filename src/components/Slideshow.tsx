@@ -7,9 +7,10 @@ type SlideshowProps = { pictures: string[] };
 function Slideshow({ pictures }: SlideshowProps) {
   const [slideId, setSlideId] = useState(1);
 
+  const picturesLenght = pictures.length;
   const slide = pictures[slideId - 1];
 
-  if (pictures.length <= 1) {
+  if (picturesLenght <= 1) {
     return (
       <div className="Slideshow">
         <img src={slide} alt={`accommodation ${slideId}`} />
@@ -18,23 +19,34 @@ function Slideshow({ pictures }: SlideshowProps) {
   }
 
   const handleClickPrevious = () => {
-    setSlideId((prev) => (prev <= 1 ? pictures.length : --prev));
+    setSlideId((prev) => (prev <= 1 ? picturesLenght : --prev));
   };
 
   const handleClickNext = () => {
-    setSlideId((prev) => (prev >= pictures.length ? 1 : ++prev));
+    setSlideId((prev) => (prev >= picturesLenght ? 1 : ++prev));
   };
 
   return (
     <div className="Slideshow">
-      <div className="Slideshow__arrow Slideshow__arrow__left">
-        <img onClick={handleClickPrevious} src={arrowLeft} alt="arrow left" />
+      <div
+        onClick={handleClickPrevious}
+        className="Slideshow__arrow Slideshow__arrow__left"
+      >
+        <img src={arrowLeft} alt="arrow left" />
       </div>
 
-      <div className="Slideshow__arrow Slideshow__arrow__right">
-        <img onClick={handleClickNext} src={arrowRigth} alt="arrow right" />
+      <div
+        onClick={handleClickNext}
+        className="Slideshow__arrow Slideshow__arrow__right"
+      >
+        <img src={arrowRigth} alt="arrow right" />
       </div>
+
       <img src={slide} alt={`accommodation ${1}`} />
+
+      <p className="Slideshow__dots">
+        {slideId}/{picturesLenght}
+      </p>
     </div>
   );
 }
