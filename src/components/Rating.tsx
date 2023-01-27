@@ -6,7 +6,7 @@ type RatingProps = { value: number };
 function Rating({ value }: RatingProps) {
   return (
     <div className="Rating">
-      {[...Array(5)].map((_, index) => (
+      {Array.from({ length: 5 }).map((_, index) => (
         <img
           src={index < value ? starRed : starGrey}
           alt={`star ${index + 1}`}
