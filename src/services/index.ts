@@ -30,7 +30,7 @@ export function getLogement({
   if (!accommodation)
     throw jsonThrowError({
       status: 404,
-      sorry: "Oups! Le logement que vous demandez n'existe pas!",
+      sorry: "Oups! Le logement que vous demandez n'existe pas.",
     });
 
   return { accommodation };
