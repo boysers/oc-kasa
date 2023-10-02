@@ -108,6 +108,7 @@
         align-items: flex-end;
         line-height: 26px;
         margin-right: 10px;
+        justify-content: center;
 
         @include media-mobile {
           font-size: 12px;
