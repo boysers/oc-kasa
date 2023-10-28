@@ -26,6 +26,7 @@ const routes: RouteObject[] = [
       {
         path: '*',
         loader: getNotFound,
+        element: <ErrorBoundary />,
         errorElement: <ErrorBoundary />,
       },
     ],
